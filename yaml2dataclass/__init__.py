@@ -50,13 +50,13 @@ class Schema:
                         args[name] = typ.scm_load_from_dict(value, path)
                         path.pop()
                     else:
-                        args[name] = cls.scm_load_typ_from_dict(typ, value)
+                        args[name] = cls.scm_load_typ_from_dict(typ, name, value)
                 else:
                     args[name] = value
             return cls(**args)
 
     @classmethod
-    def scm_load_typ_from_dict(cls, typ, value):
+    def scm_load_typ_from_dict(cls, typ, name, value):
         """Convert a value of a given type (for loading)."""
         return value
 
