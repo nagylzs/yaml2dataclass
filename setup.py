@@ -2,7 +2,7 @@
 from distutils.core import setup
 from yaml2dataclass.version import release
 
-setup(name='winpid',
+setup(name='yaml2dataclass',
       version=release,
       description='Load type annotated dataclasses from YAML files.',
       long_description="A little helper class that lets you load type annotated dataclasses from YAML files. "
