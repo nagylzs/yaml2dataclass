@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 from distutils.core import setup
-from yaml2dataclass.version import release
+
+MAJOR = 0
+MINOR = 3
+BUILD = 3
+
+version = "%s.%s" % (MAJOR, MINOR)
+release = "%s.%s.%s" % (MAJOR, MINOR, BUILD)
 
 setup(name='yaml2dataclass',
       version=release,
